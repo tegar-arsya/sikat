@@ -165,5 +165,5 @@ export default function EditBanner({ params }: { params: { id: string } }) {
         </CardContent>
       </Card>
     </div>
-  );
+  )
 }
