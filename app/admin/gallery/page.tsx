@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react'
 import { supabase } from '@/lib/supabase'
 import { Button } from "@/components/ui/button"
 import {
@@ -31,23 +31,11 @@ export default function GalleryList() {
   const [currentPage, setCurrentPage] = useState(1)
   const [totalPages, setTotalPages] = useState(0)
 
-  const fetchGallery = useCallback(async () => {
-    const { data, error } = await supabase
-      .from('gallery')
-      .select('*')
-      .range((currentPage - 1) * ITEMS_PER_PAGE, currentPage * ITEMS_PER_PAGE - 1)
-
-    if (error) {
-      Swal.fire('Error', 'Failed to fetch price list', 'error')
-    } else {
-      setGallery(data || [])
-      setTotalPages(Math.ceil((data?.length || 0) / ITEMS_PER_PAGE))
-    }
-  }, [currentPage])
-
   useEffect(() => {
     fetchGallery()
-  }, [currentPage, fetchGallery])
+  }, [currentPage])
+
+  async function fetchGallery() {
     const { data, error } = await supabase
       .from('gallery')
       .select('*')
@@ -62,7 +50,7 @@ export default function GalleryList() {
   }
 
 
-  const deleteGalleryItem = async (id: string) => {
+  async function deleteGalleryItem(id: string) {
     const { error } = await supabase
       .from('gallery')
       .delete()
@@ -71,7 +59,7 @@ export default function GalleryList() {
     if (error) {
       console.error('Error deleting price item:', error)
     } else {
-     
+        fetchGallery() // Refresh the price list after deletion
     }
   }
 
@@ -79,9 +67,7 @@ export default function GalleryList() {
   const handlePageChange = (page: number) => {
     setCurrentPage(page)
   }
-  function setCurrentPage(page: number) {
-    setCurrentPage(page);
-  }
+
   return (
     <div className="space-y-6">
       <h1 className="text-3xl font-bold">Gallery Management</h1>
