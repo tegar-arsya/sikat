@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://tegararsyadani.my.id
+
+# Sitemaps
+Sitemap: https://tegararsyadani.my.id/sitemap.xml
