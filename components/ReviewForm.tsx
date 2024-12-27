@@ -69,7 +69,7 @@ export default function ReviewForm() {
     }
   }
 
-  const ratingLabels = {
+  const ratingLabels: { [key: number]: string } = {
     1: 'Poor',
     2: 'Fair',
     3: 'Good',
