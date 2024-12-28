@@ -78,7 +78,7 @@ export default function GalleryList() {
         <TableCaption>List of banners</TableCaption>
         <TableHeader>
           <TableRow>
-            <TableHead className="w-[100px]">id</TableHead>=
+            <TableHead className="w-[100px]">id</TableHead>
             <TableHead>Images</TableHead>
             <TableHead className="text-right">Action</TableHead>
           </TableRow>
@@ -87,7 +87,7 @@ export default function GalleryList() {
           {Array.isArray(gallery) &&
             gallery.map((item) => (
               <TableRow key={item.id}>
-                <TableCell className="font-medium">{item.id}</TableCell>=
+                <TableCell className="font-medium">{item.id}</TableCell>
                 <TableCell>
                   <Image
                     src={`${SUPABASE_URL}/storage/v1/object/public/images/${item.image}`}

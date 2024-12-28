@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-8 md:mb-0 text-center md:text-left">
-            <h3 className="text-3xl font-bold mb-2">Katsikat Shoe Cleaning</h3>
+            <h3 className="text-3xl font-bold mb-2">Sikat Shoe Cleaning</h3>
             <p className="text-xl">Revive Your Kicks with Professional Care</p>
           </div>
           <div className="flex space-x-6">
@@ -22,7 +22,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-12 text-center">
-          <p className="text-lg">&copy; 2023 Katsikat Shoe Cleaning. All rights reserved.</p>
+          <p className="text-lg">&copy; 2024 Sikat Shoe Cleaning. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -70,7 +70,7 @@ export function Navbar() {
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <span className="hidden font-bold sm:inline-block text-xl">
-              Katsikat Shoe Cleaning
+              Sikat Shoe Cleaning
             </span>
           </Link>
           <NavigationMenu>
@@ -86,7 +86,7 @@ export function Navbar() {
                           href="/"
                         >
                           <div className="mb-2 mt-4 text-lg font-medium">
-                            Katsikat Services
+                            Sikat Services
                           </div>
                           <p className="text-sm leading-tight text-muted-foreground">
                             Professional shoe cleaning services to revive your kicks

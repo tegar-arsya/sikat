@@ -6,33 +6,33 @@ import { formatJsonLd } from "@/lib/jsonHelper";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Katsikat Shoe Cleaning',
+  title: 'Sikat Shoe Cleaning',
   description: 'Layanan pembersihan sepatu profesional untuk menghidupkan kembali sepatu Anda.',
   openGraph: {
-    title: 'Katsikat Shoe Cleaning',
+    title: 'Sikat Shoe Cleaning',
     description: 'Layanan pembersihan sepatu profesional untuk menghidupkan kembali sepatu Anda.',
-    url: 'https://katsikat.vercel.app',
-    siteName: 'Katsikat Shoe Cleaning',
+    url: 'https://Sikat.vercel.app',
+    siteName: 'Sikat Shoe Cleaning',
     images: [
       {
         url: 'https://jtvrfxldycmyztieusdd.supabase.co/storage/v1/object/public/images/banner/kat.png',
         width: 800,
         height: 600,
-        alt: 'Katsikat Shoe Cleaning',
+        alt: 'Sikat Shoe Cleaning',
       },
     ],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Katsikat Shoe Cleaning',
+    title: 'Sikat Shoe Cleaning',
     description: 'Layanan pembersihan sepatu profesional untuk menghidupkan kembali sepatu Anda.',
     images: [
       {
         url: 'https://jtvrfxldycmyztieusdd.supabase.co/storage/v1/object/public/images/banner/kat.png', 
         width: 800,
         height: 600,
-        alt: 'Katsikat Shoe Cleaning',
+        alt: 'Sikat Shoe Cleaning',
       },
     ],
   },
@@ -46,9 +46,9 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Katsikat Shoe Cleaning",
+    "name": "Sikat Shoe Cleaning",
     "description": "Layanan pembersihan sepatu profesional untuk menghidupkan kembali sepatu Anda.",
-    "url": "https://katsikat.vercel.app",
+    "url": "https://Sikat.vercel.app",
     "sameAs": [
       "https://www.linkedin.com/in/tegar-arsyadani",
       "https://www.instagram.com/tegar_arsya",
